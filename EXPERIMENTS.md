@@ -368,6 +368,12 @@ writer in flight at the destination, the dependent chain consumes 0x2a
 (class 21), not the transient byte. Results are per-build: log the build
 with every contrast.
 
+[SUPERSEDED 2026-09-29: the two poison arms also change the faulting
+load's page offset as a side effect of the write -- with the address held
+constant the destination write does not suppress, class 21 stays 0/8, and
+the load's offset match is the instrument. See the "Poison deconfound"
+section at the end.]
+
 Companion artifact, withdrawn reading: in CLASSKEY mode the companion slot
 63 sits one 0x1040 stride above the primary slot and is preheated by the
 hardware stride prefetch: with the primary at 62 it reads 63..64/64 hot
@@ -662,3 +668,62 @@ Every cell reproduced, `hot` 34..36 throughout (`bench-confirm.sh`,
 
 Nothing moved between the two bench states, so the 2026-09-28 numbers stand
 as recorded and the powersave/CPU3-online caveat on them is withdrawn.
+
+## Poison deconfound (2026-09-29), build md5 `89b604d2b79db9556074e5d27dc18a19`
+
+The 2026-09-27 "suppressor" reading (the al/eax poison kills the class-61
+signal) was confounded: both arms also change the faulting load's address.
+The al write rebases the load's page offset from 0x40 to 0x2a; the eax
+write replaces the whole address (canonical 0x2a) and turns the #GP into a
+#PF. Three knobs were added to `fallout-oneshot.c` to separate the
+variables: `CSEQ_POISON_KEEP` (al write, address held in a pinned spare
+register), `CSEQ_POISON_FULL_KEEP` (same, full-width write),
+`CSEQ_LOADOFF=<hex>` (faulting-load page offset override; the store keeps
+`OFFSET`).
+
+Results (two processes per cell, `CSEQ=1 NC=1 SLOT=61 FRESH=1`, store at
+offset 0x40 unless noted; `poison-deconf.sh`, log
+`poison-deconf-20260929.txt`; hits 59..64 on every hot cell, faults 64/64
+everywhere):
+
+| cell | what moves | class 61 |
+|---|---|---|
+| base | -- | 8/8, 8/8 |
+| `CSEQ_POISON=1` | al write + load 0x40 -> 0x2a (confounded arm) | 0/8, 0/8 |
+| `CSEQ_POISON_KEEP=1` | al write, address preserved | **8/8, 8/8** |
+| `CSEQ_POISON_FULL_KEEP=1` | eax write, address preserved | **8/8, 8/8** |
+| `CSEQ_LOADOFF=0x2a` | load offset alone | 0/8, 0/8 |
+| `CSEQ_LOADOFF=0x2a CSEQ_POISON_KEEP=1` | both, explicit | 0/8, 0/8 |
+| `OFFSET=0x2a` | store and load moved together | **8/8, 8/8** |
+| `OFFSET=0x2a CSEQ_POISON_KEEP=1` | + write | **8/8, 8/8** |
+| `CSEQ_POISON=1 SLOT=21` | class-21 check | 0/8, 0/8 |
+| `CSEQ_POISON_KEEP=1 SLOT=21` | class-21 check | 0/8, 0/8 |
+| base (after) | -- | 8/8, 8/8 |
+
+Match granularity (`poison-gran.sh`, log `poison-gran-20260929.txt`, same
+build; store at 0x40, load moved alone):
+
+| load offset | delta from the store | class 61 |
+|---|---|---|
+| 0x41 | +1 byte (same line, same set) | 0/8, 0/8 |
+| 0x1040 | +1 page (same offset, same set) | **8/8, 8/8** |
+| 0x80 | +0x40 (different line) | 0/8, 0/8 |
+
+Reading, kept narrow:
+
+- A preceding write to the faulting load's destination register does NOT
+  suppress: both KEEP arms sit at the ceiling with the address held
+  constant. The 2026-09-27 "any preceding write to the destination"
+  reading is withdrawn.
+- The suppressing variable in the original poison arms was the load's page
+  offset. The signal needs the faulting load at the store's page offset
+  (low 12 bits), byte-precise: one byte of drift kills it (0x41), one page
+  of drift does not (0x1040). Bits above bit 11 do not participate --
+  consistent with the "page-offset-only match" model this harness already
+  used for the SPEC present target.
+- The class-21 sentence from the 2026-09-27 notes is refuted: with the
+  offset mismatched, class 21 stays at 0/8 in both arms -- nothing lands,
+  the chain does not consume the poison value.
+- What structure performs the low-12-bit match is still not identified
+  (a store-buffer partial-address CAM is the natural candidate; this is a
+  hypothesis, not an origin claim).

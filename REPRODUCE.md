@@ -60,9 +60,30 @@ PASS in a warmed burst:
 | `CSEQ_FENCE=1` | 0/8 twice |
 | `CSEQ_LFENCE=1` | 0/8 twice |
 | no `NC` (PROT_NONE fault) | 0/10 |
-| stock VALUE arm + NC | 0/8 twice (suppressor = the al poison; see README) |
-| `CSEQ_POISON=1` | 0/8 x6 then x2 (the suppressor, found 2026-09-27) |
+| stock VALUE arm + NC | 0/8 twice (the al poison rebases the load offset; see 4a) |
+| `CSEQ_POISON=1` | 0/8 x6 then x2 (confounded arm; see 4a) |
 | `CSEQ_NOPPRE=1` | 8/8 twice (nop in the same place -- not the timing) |
+
+### 4a. Poison deconfound (2026-09-29, build `89b604d2b79db9556074e5d27dc18a19`)
+
+The `CSEQ_POISON` rows above are reinterpreted: the al write rebases the
+faulting load's page offset (0x40 -> 0x2a), so the arm changed two
+variables. Clean controls (two processes per cell, base command plus the
+listed variable):
+
+| arm | observed |
+|---|---|
+| `CSEQ_POISON_KEEP=1` (write, address preserved) | 8/8, 8/8 (hits 62..64) |
+| `CSEQ_POISON_FULL_KEEP=1` | 8/8, 8/8 |
+| `CSEQ_LOADOFF=0x2a` (load offset alone, store 0x40) | 0/8, 0/8 |
+| `OFFSET=0x2a` (store and load together) | 8/8, 8/8 |
+| `CSEQ_LOADOFF=0x41` (one byte off) | 0/8, 0/8 |
+| `CSEQ_LOADOFF=0x1040` (+1 page, same offset) | 8/8, 8/8 |
+
+The destination write does not suppress; the faulting load must sit at the
+store's page offset (low 12 bits, byte-precise; bits above bit 11 free).
+Logs: `poison-deconf-20260929.txt`, `poison-gran-20260929.txt`; scripts
+`poison-deconf.sh`, `poison-gran.sh`.
 
 Root counters (perf 7.1.5) on the gap regime show no PMU signature for the
 low-rate state: a 0/8 process is counter-identical to hot ones (cycles,
@@ -101,13 +122,16 @@ cycles/elapsed). See `README.md` (B3) and `b3-probe-20260927.txt`.
   advice is a silent no-op. The run then looks like a clean negative while
   measuring nothing. `page_atk` is `memset` at setup and `trig gate:` is the
   witness; no witness means VOID, not negative.
-- Compiler-chosen registers can trip the suppressor. Written in C, the SPEC
-  gadget compiled to `mov spec_bound_p,%rax; mov (%rax),%rax; ...;
-  movzbl (%rdi),%eax` -- RAX written twice before a shadow load targeting
-  EAX, the second writer being the CLFLUSH'd bound load, i.e. a DRAM miss
-  still in flight exactly when the forward would have to happen. The
-  destination is pinned to `%rdx` in asm for that reason. Check the gadget
-  with `objdump -d` after every build; the rule cannot be read off the C.
+- Compiler-chosen registers can silently change which path you measure.
+  Written in C, the SPEC gadget compiled to `mov spec_bound_p,%rax;
+  mov (%rax),%rax; ...; movzbl (%rdi),%eax` -- RAX live across a shadow
+  load targeting EAX, the writer being the CLFLUSH'd bound load, i.e. a
+  DRAM miss in flight exactly when the forward would have to happen. The
+  destination is pinned to `%rdx` in asm so the value path stays explicit.
+  Check the gadget with `objdump -d` after every build; the rule cannot be
+  read off the C. (The 2026-09-29 CSEQ deconfound showed the instrument
+  there was the faulting load's page offset, not the destination write;
+  keep the pinning as path hygiene, not as a suppressor rule.)
 - A bare `clflush` helper is used for the SPEC gate line. `flush_line()`
   ends in `mfence`, which drains the store buffer; inside the inner loop
   that silently reinvents the measured `CSEQ_FENCE` killer.

