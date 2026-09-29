@@ -1,0 +1,22 @@
+== vf x6
+vf run 1 rc=0 cseq slot=61 majority_rounds=8/8 repeatable=1
+vf run 2 rc=0 cseq slot=61 majority_rounds=8/8 repeatable=1
+vf run 3 rc=0 cseq slot=61 majority_rounds=8/8 repeatable=1
+vf run 4 rc=0 cseq slot=61 majority_rounds=3/8 repeatable=0
+vf run 5 rc=0 cseq slot=61 majority_rounds=8/8 repeatable=1
+vf run 6 rc=0 cseq slot=61 majority_rounds=8/8 repeatable=1
+== prologue x6
+prologue run 1 rc=0 cseq slot=61 majority_rounds=6/8 repeatable=1
+prologue run 2 rc=0 cseq slot=61 majority_rounds=8/8 repeatable=1
+prologue run 3 rc=1 
+prologue run 4 rc=0 cseq slot=61 majority_rounds=8/8 repeatable=1
+prologue run 5 rc=0 cseq slot=61 majority_rounds=8/8 repeatable=1
+prologue run 6 rc=0 cseq slot=61 majority_rounds=1/8 repeatable=0
+== poison x6
+poison run 1 rc=0 cseq slot=61 majority_rounds=0/8 repeatable=0
+poison run 2 rc=0 cseq slot=61 majority_rounds=0/8 repeatable=0
+poison run 3 rc=0 cseq slot=61 majority_rounds=0/8 repeatable=0
+poison run 4 rc=0 cseq slot=61 majority_rounds=0/8 repeatable=0
+poison run 5 rc=0 cseq slot=61 majority_rounds=0/8 repeatable=0
+poison run 6 rc=0 cseq slot=61 majority_rounds=0/8 repeatable=0
+== recheck done

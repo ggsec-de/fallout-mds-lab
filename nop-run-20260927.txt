@@ -1,0 +1,10 @@
+== base x2
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== poison x2
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== noppre x2
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== nop-run done

@@ -1,0 +1,68 @@
+build md5: 41bfb756804cf1f5bbe6a08af6d10018
+date: 2026-09-28T18:13:29Z
+governor: powersave
+online: 0-3
+########## gate legs alone ##########
+-- SPEC_SELFTEST=1 (plant 0x42 -> class 61 must come back)
+spec target=noncanon store=late vflush=1 tflush=0 delay=100 inner=30 bound_set=11 array_set=0 train_class=47 malicious_x=0x9875d534a8ae5040
+spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1
+spec gate: PASS
+verdict: SPEC_SELFTEST_OK
+-- SPEC_SELFTEST=2 (plant 0x00 -> 63 hot, 61 at the floor)
+spec target=noncanon store=late vflush=1 tflush=0 delay=100 inner=30 bound_set=11 array_set=0 train_class=47 malicious_x=0x9875d442c5eb5040
+spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1
+spec gate: PASS
+verdict: SPEC_SELFTEST_OK
+########## SPEC_TARGET=noncanon ##########
+== noncanon slot=61 store=late  (signal) x2
+   timing: cold=274 hot=30 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+   timing: cold=244 hot=32 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+== noncanon slot=61 store=none  (floor) x2
+   timing: cold=296 hot=40 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+   timing: cold=258 hot=32 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=1/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+== noncanon slot=63 store=late  (liveness, present only) x2
+   timing: cold=228 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=63 majority_rounds=0/8 repeatable=0 
+   timing: cold=234 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=63 majority_rounds=0/8 repeatable=0 
+== noncanon slot=61 store=early (recorded) x2
+   timing: cold=256 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+   timing: cold=1138 hot=36 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+########## SPEC_TARGET=present ##########
+== present slot=61 store=late  (signal) x2
+   timing: cold=258 hot=36 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=1/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+   timing: cold=312 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+== present slot=61 store=none  (floor) x2
+   timing: cold=256 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+   timing: cold=232 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+== present slot=63 store=late  (liveness, present only) x2
+   timing: cold=316 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=63 majority_rounds=8/8 repeatable=1 
+   timing: cold=292 hot=36 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=63 majority_rounds=8/8 repeatable=1 
+== present slot=61 store=early (recorded) x2
+   timing: cold=256 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+   timing: cold=612 hot=38 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+########## SPEC_TARGET=protnone ##########
+== protnone slot=61 store=late  (signal) x2
+   timing: cold=254 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+   timing: cold=260 hot=32 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+== protnone slot=61 store=none  (floor) x2
+   timing: cold=292 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+   timing: cold=234 hot=38 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+== protnone slot=63 store=late  (liveness, present only) x2
+   timing: cold=254 hot=36 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=63 majority_rounds=0/8 repeatable=0 
+   timing: cold=234 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=63 majority_rounds=0/8 repeatable=0 
+== protnone slot=61 store=early (recorded) x2
+   timing: cold=248 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+   timing: cold=232 hot=38 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+########## recorded, outside the sentences ##########
+== present slot=61 tflush=1 x2
+   timing: cold=316 hot=30 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+   timing: cold=254 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+== noncanon slot=61 vflush=0 x2
+   timing: cold=360 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+   timing: cold=230 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+== noncanon slot=61 delay=400 x2
+   timing: cold=260 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+   timing: cold=290 hot=34 threshold=150 spec gate1 plant=0x42 c61=64/64 c63=0/64 pass=1 spec gate2 plant=0x00 c63=64/64 c61=0/64 pass=1 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+== stock hot base, same build, sanity x2
+   cseq slot=61 majority_rounds=8/8 repeatable=1
+   cseq slot=61 majority_rounds=8/8 repeatable=1
+== spec-run done

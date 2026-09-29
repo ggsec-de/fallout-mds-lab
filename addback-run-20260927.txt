@@ -1,0 +1,35 @@
+== base x2
+timing: cold=234 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=232 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== poison x2
+timing: cold=248 hot=34 threshold=150
+cseq slot=61 majority_rounds=0/8 repeatable=0
+timing: cold=232 hot=32 threshold=150
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== vf x2
+timing: cold=232 hot=34 threshold=150
+timing: cold=292 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== prologue x2
+timing: cold=232 hot=32 threshold=150
+cseq slot=61 majority_rounds=7/8 repeatable=1
+timing: cold=228 hot=32 threshold=150
+== vaddr x2
+timing: cold=232 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=230 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== stock control x2 (VALUE=1)
+timing: cold=292 hot=32 threshold=150
+matrix rule: hit=reload<150; trials=64; majority round=hits*2>trials; repeatable=majority_rounds*2>rounds (8). Two processes before either sentence. Class 61 is v%64==2 (0x02,0x42,0x82,0xC2). Class 0 is not interpreted.
+matrix slot=61 arm=nostore majority_rounds=0/8 repeatable=0
+matrix slot=61 arm=fence majority_rounds=0/8 repeatable=0
+matrix slot=61 arm=store majority_rounds=0/8 repeatable=0
+timing: cold=234 hot=34 threshold=150
+matrix rule: hit=reload<150; trials=64; majority round=hits*2>trials; repeatable=majority_rounds*2>rounds (8). Two processes before either sentence. Class 61 is v%64==2 (0x02,0x42,0x82,0xC2). Class 0 is not interpreted.
+matrix slot=61 arm=nostore majority_rounds=0/8 repeatable=0
+matrix slot=61 arm=fence majority_rounds=0/8 repeatable=0
+matrix slot=61 arm=store majority_rounds=0/8 repeatable=0
+== addback done

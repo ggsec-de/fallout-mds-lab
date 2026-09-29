@@ -1,0 +1,442 @@
+== event set: cycles,instructions,mem_load_retired.l1_hit,mem_load_retired.l1_miss,mem_load_retired.fb_hit,l1d_pend_miss.pending,l1d.replacement
+=== b3b run 1 start=1790540749.345452961
+timing: cold=282 hot=34 threshold=150
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+--- counters run 1
+        12,595,558      cycles                                                                
+        14,491,344      instructions                                                          
+         3,701,997      mem_load_retired.l1_hit                                               
+            46,793      mem_load_retired.l1_miss                                              
+            38,279      mem_load_retired.fb_hit                                               
+         2,349,719      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003909042 seconds time elapsed
+       0.003989000 seconds user
+       0.000000000 seconds sys
+=== b3b run 2 start=1790540754.377734188
+timing: cold=232 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=63/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 2
+        12,043,186      cycles                                                                
+        14,447,629      instructions                                                          
+         3,692,280      mem_load_retired.l1_hit                                               
+            47,177      mem_load_retired.l1_miss                                              
+            38,589      mem_load_retired.fb_hit                                               
+         2,248,854      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003741083 seconds time elapsed
+       0.003834000 seconds user
+       0.000000000 seconds sys
+=== b3b run 3 start=1790540759.409587482
+timing: cold=238 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 3
+        11,961,203      cycles                                                                
+        14,417,110      instructions                                                          
+         3,689,156      mem_load_retired.l1_hit                                               
+            44,596      mem_load_retired.l1_miss                                              
+            36,856      mem_load_retired.fb_hit                                               
+         2,212,918      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003721099 seconds time elapsed
+       0.003813000 seconds user
+       0.000000000 seconds sys
+=== b3b run 4 start=1790540764.449573519
+timing: cold=242 hot=36 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 4
+        12,191,527      cycles                                                                
+        14,482,634      instructions                                                          
+         3,699,512      mem_load_retired.l1_hit                                               
+            47,889      mem_load_retired.l1_miss                                              
+            38,546      mem_load_retired.fb_hit                                               
+         2,368,668      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003784258 seconds time elapsed
+       0.003874000 seconds user
+       0.000000000 seconds sys
+=== b3b run 5 start=1790540769.481618335
+timing: cold=238 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 5
+        12,013,159      cycles                                                                
+        14,427,176      instructions                                                          
+         3,689,678      mem_load_retired.l1_hit                                               
+            44,923      mem_load_retired.l1_miss                                              
+            36,830      mem_load_retired.fb_hit                                               
+         2,247,043      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003743369 seconds time elapsed
+       0.003837000 seconds user
+       0.000000000 seconds sys
+=== b3b run 6 start=1790540774.513592766
+timing: cold=296 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 6
+        12,213,370      cycles                                                                  (99.36%)
+        14,435,431      instructions                                                          
+         3,691,991      mem_load_retired.l1_hit                                               
+            45,620      mem_load_retired.l1_miss                                              
+            37,208      mem_load_retired.fb_hit                                               
+         2,324,166      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003862324 seconds time elapsed
+       0.003952000 seconds user
+       0.000000000 seconds sys
+=== b3b run 7 start=1790540779.541944437
+timing: cold=238 hot=32 threshold=150
+cseq slot=61 round=0 hits=63/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 7
+        12,313,663      cycles                                                                
+        14,785,683      instructions                                                          
+         3,781,016      mem_load_retired.l1_hit                                               
+            47,407      mem_load_retired.l1_miss                                              
+            37,607      mem_load_retired.fb_hit                                               
+         2,353,944      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003827456 seconds time elapsed
+       0.003920000 seconds user
+       0.000000000 seconds sys
+=== b3b run 8 start=1790540784.577693987
+timing: cold=234 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 8
+        12,089,592      cycles                                                                
+        14,432,548      instructions                                                          
+         3,689,247      mem_load_retired.l1_hit                                               
+            47,006      mem_load_retired.l1_miss                                              
+            36,777      mem_load_retired.fb_hit                                               
+         2,267,607      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003758318 seconds time elapsed
+       0.003848000 seconds user
+       0.000000000 seconds sys
+=== b3b run 9 start=1790540789.613598697
+timing: cold=264 hot=34 threshold=150
+cseq slot=61 round=0 hits=63/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 9
+        12,228,655      cycles                                                                
+        14,428,839      instructions                                                          
+         3,684,530      mem_load_retired.l1_hit                                               
+            49,167      mem_load_retired.l1_miss                                              
+            38,712      mem_load_retired.fb_hit                                               
+         2,410,855      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003812917 seconds time elapsed
+       0.003903000 seconds user
+       0.000000000 seconds sys
+=== b3b run 10 start=1790540794.645683668
+timing: cold=234 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 10
+        12,092,417      cycles                                                                
+        14,459,545      instructions                                                          
+         3,691,704      mem_load_retired.l1_hit                                               
+            50,278      mem_load_retired.l1_miss                                              
+            37,177      mem_load_retired.fb_hit                                               
+         2,378,674      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003773927 seconds time elapsed
+       0.003867000 seconds user
+       0.000000000 seconds sys
+=== b3b run 11 start=1790540799.677617910
+timing: cold=320 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 11
+        12,122,177      cycles                                                                
+        14,433,434      instructions                                                          
+         3,682,908      mem_load_retired.l1_hit                                               
+            50,679      mem_load_retired.l1_miss                                              
+            40,754      mem_load_retired.fb_hit                                               
+         2,353,184      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003766655 seconds time elapsed
+       0.003859000 seconds user
+       0.000000000 seconds sys
+=== b3b run 12 start=1790540804.705622675
+timing: cold=338 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 12
+        12,015,692      cycles                                                                
+        14,424,461      instructions                                                          
+         3,690,238      mem_load_retired.l1_hit                                               
+            44,872      mem_load_retired.l1_miss                                              
+            37,334      mem_load_retired.fb_hit                                               
+         2,271,011      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003737657 seconds time elapsed
+       0.003825000 seconds user
+       0.000000000 seconds sys
+=== b3b run 13 start=1790540809.733614480
+timing: cold=232 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=63/64 majority=1 faults=64
+cseq slot=61 round=3 hits=62/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 13
+        12,141,604      cycles                                                                
+        14,439,149      instructions                                                          
+         3,693,696      mem_load_retired.l1_hit                                               
+            45,655      mem_load_retired.l1_miss                                              
+            36,666      mem_load_retired.fb_hit                                               
+         2,256,740      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003770878 seconds time elapsed
+       0.003860000 seconds user
+       0.000000000 seconds sys
+=== b3b run 14 start=1790540814.765629404
+timing: cold=232 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 14
+        12,026,304      cycles                                                                
+        14,462,865      instructions                                                          
+         3,697,543      mem_load_retired.l1_hit                                               
+            45,833      mem_load_retired.l1_miss                                              
+            37,761      mem_load_retired.fb_hit                                               
+         2,232,541      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003736504 seconds time elapsed
+       0.003836000 seconds user
+       0.000000000 seconds sys
+=== b3b run 15 start=1790540819.809594595
+timing: cold=234 hot=32 threshold=150
+cseq slot=61 round=0 hits=61/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 15
+        12,154,605      cycles                                                                
+        14,459,582      instructions                                                          
+         3,696,094      mem_load_retired.l1_hit                                               
+            46,660      mem_load_retired.l1_miss                                              
+            37,842      mem_load_retired.fb_hit                                               
+         2,285,321      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003910543 seconds time elapsed
+       0.003989000 seconds user
+       0.000000000 seconds sys
+=== b3b run 16 start=1790540824.837821147
+timing: cold=416 hot=34 threshold=150
+cseq slot=61 round=0 hits=61/64 majority=1 faults=64
+cseq slot=61 round=1 hits=63/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 16
+        12,309,652      cycles                                                                
+        14,746,656      instructions                                                          
+         3,773,021      mem_load_retired.l1_hit                                               
+            47,156      mem_load_retired.l1_miss                                              
+            37,538      mem_load_retired.fb_hit                                               
+         2,350,735      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003826913 seconds time elapsed
+       0.003918000 seconds user
+       0.000000000 seconds sys
+=== b3b run 17 start=1790540829.877690806
+timing: cold=238 hot=32 threshold=150
+cseq slot=61 round=0 hits=63/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 17
+        12,098,142      cycles                                                                
+        14,450,393      instructions                                                          
+         3,698,556      mem_load_retired.l1_hit                                               
+            42,639      mem_load_retired.l1_miss                                              
+            37,033      mem_load_retired.fb_hit                                               
+         2,204,066      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003778111 seconds time elapsed
+       0.003868000 seconds user
+       0.000000000 seconds sys
+=== b3b run 18 start=1790540834.909629332
+timing: cold=374 hot=32 threshold=150
+cseq slot=61 round=0 hits=57/64 majority=1 faults=64
+cseq slot=61 round=1 hits=63/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 18
+        12,092,802      cycles                                                                
+        14,408,382      instructions                                                          
+         3,676,434      mem_load_retired.l1_hit                                               
+            50,129      mem_load_retired.l1_miss                                              
+            40,806      mem_load_retired.fb_hit                                               
+         2,360,211      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003771802 seconds time elapsed
+       0.003862000 seconds user
+       0.000000000 seconds sys
+=== b3b run 19 start=1790540839.949595070
+timing: cold=260 hot=32 threshold=150
+cseq slot=61 round=0 hits=63/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 19
+        12,001,492      cycles                                                                
+        14,437,512      instructions                                                          
+         3,689,039      mem_load_retired.l1_hit                                               
+            47,068      mem_load_retired.l1_miss                                              
+            38,322      mem_load_retired.fb_hit                                               
+         2,273,284      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003740411 seconds time elapsed
+       0.003831000 seconds user
+       0.000000000 seconds sys
+=== b3b run 20 start=1790540844.981594728
+timing: cold=240 hot=34 threshold=150
+cseq slot=61 round=0 hits=60/64 majority=1 faults=64
+cseq slot=61 round=1 hits=61/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=63/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 20
+        12,126,483      cycles                                                                
+        14,443,922      instructions                                                          
+         3,681,560      mem_load_retired.l1_hit                                               
+            56,059      mem_load_retired.l1_miss                                              
+            42,136      mem_load_retired.fb_hit                                               
+         2,352,126      l1d_pend_miss.pending                                                 
+     <not counted>      l1d.replacement                                                         (0.00%)
+       0.003768015 seconds time elapsed
+       0.003862000 seconds user
+       0.000000000 seconds sys
+== b3b done

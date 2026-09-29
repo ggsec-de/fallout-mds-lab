@@ -1,0 +1,16 @@
+== base x2
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== poison_al x2
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== poison_full x2
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== poison_other x2
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== nop x2
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== p-mech done

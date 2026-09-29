@@ -1,0 +1,231 @@
+== control: no victim, attacker nostore cpu1
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== victim mode=b 0x42 cpu1 300ms -> attacker cpu1 right after
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== victim mode=s 0x42 cpu1 300ms -> attacker cpu1 right after
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== victim mode=l 0x42 cpu1 300ms -> attacker cpu1 right after
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== control: victim mode=b 0x42 on cpu2 (other core), attacker cpu1
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=1/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== control end: no victim
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=1/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0

@@ -1,0 +1,101 @@
+=== hunt run 1 start=1790541615.265132719
+timing: cold=234 hot=34 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=182 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 2 start=1790541620.270122157
+timing: cold=236 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=36 second_t=242 true_t=36 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 3 start=1790541625.275027097
+timing: cold=382 hot=34 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=188 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 4 start=1790541630.279911087
+timing: cold=230 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=192 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 5 start=1790541635.284832687
+timing: cold=262 hot=34 threshold=150
+cseq scan(pre) best=61 best_t=32 second_t=186 true_t=32 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 6 start=1790541640.289692882
+timing: cold=254 hot=34 threshold=150
+cseq scan(pre) best=61 best_t=32 second_t=196 true_t=32 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 7 start=1790541645.294605777
+timing: cold=234 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=240 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 8 start=1790541650.299501139
+timing: cold=258 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=32 second_t=192 true_t=32 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 9 start=1790541655.304403621
+timing: cold=236 hot=34 threshold=150
+cseq scan(pre) best=61 best_t=32 second_t=192 true_t=32 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 10 start=1790541660.309310984
+timing: cold=240 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=230 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 11 start=1790541665.314235914
+timing: cold=232 hot=34 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=176 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 12 start=1790541670.319146646
+timing: cold=234 hot=36 threshold=150
+cseq scan(pre) best=61 best_t=32 second_t=238 true_t=32 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 13 start=1790541675.324158562
+timing: cold=256 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=184 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 14 start=1790541680.329068984
+timing: cold=254 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=188 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 15 start=1790541685.333996497
+timing: cold=234 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=190 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 16 start=1790541690.338971360
+timing: cold=234 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=186 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 17 start=1790541695.344115997
+timing: cold=290 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=138 true_t=34 hot=2
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 18 start=1790541700.350799289
+timing: cold=290 hot=34 threshold=150
+cseq scan(pre) best=61 best_t=32 second_t=158 true_t=32 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 19 start=1790541705.355967849
+timing: cold=230 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=190 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 20 start=1790541710.362554243
+timing: cold=258 hot=34 threshold=150
+cseq scan(pre) best=61 best_t=36 second_t=190 true_t=36 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 21 start=1790541715.367469095
+timing: cold=232 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=184 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 22 start=1790541720.372381964
+timing: cold=316 hot=34 threshold=150
+cseq scan(pre) best=61 best_t=34 second_t=186 true_t=34 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 23 start=1790541725.377294874
+timing: cold=260 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=32 second_t=186 true_t=32 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 24 start=1790541730.382179499
+timing: cold=256 hot=34 threshold=150
+cseq scan(pre) best=46 best_t=32 second_t=32 true_t=34 hot=3
+cseq slot=61 majority_rounds=8/8 repeatable=1
+=== hunt run 25 start=1790541735.387125889
+timing: cold=256 hot=32 threshold=150
+cseq scan(pre) best=61 best_t=32 second_t=212 true_t=32 hot=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== hunt done

@@ -1,0 +1,15 @@
+build md5: 41bfb756804cf1f5bbe6a08af6d10018
+date: 2026-09-28T18:34:46Z
+governor: powersave
+online: 0-3
+== 2x2 swap, SPEC_TARGET=noncanon, store=late
+canary=0x42 slot=61 store=late : timing: cold=358 hot=34 threshold=150 spec slot=61 majority_rounds=8/8 repeatable=1 
+canary=0x42 slot=27 store=late : timing: cold=306 hot=38 threshold=150 spec slot=27 majority_rounds=0/8 repeatable=0 
+canary=0x24 slot=61 store=late : timing: cold=258 hot=32 threshold=150 spec slot=61 majority_rounds=0/8 repeatable=0 
+canary=0x24 slot=27 store=late : timing: cold=242 hot=32 threshold=150 spec slot=27 majority_rounds=8/8 repeatable=1 
+== floors for both canaries (store=none)
+canary=0x42 slot=61 store=none : spec slot=61 majority_rounds=0/8 repeatable=0 
+canary=0x42 slot=27 store=none : spec slot=27 majority_rounds=0/8 repeatable=0 
+canary=0x24 slot=61 store=none : spec slot=61 majority_rounds=0/8 repeatable=0 
+canary=0x24 slot=27 store=none : spec slot=27 majority_rounds=0/8 repeatable=0 
+== spec-swap done

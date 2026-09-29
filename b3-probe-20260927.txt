@@ -1,0 +1,227 @@
+== environment
+7.1.5+kali-amd64
+perf version 7.1.5
+msr node: readable
+== perf event availability
+  l1d.replacement
+  machine_clears.memory_ordering
+  machine_clears.count
+  machine_clears.smc
+  tma_machine_clears
+  tma_machine_clears
+  tma_machine_clears
+  tma_machine_clears
+  tma_machine_clears
+  tma_machine_clears
+== series: 10 runs, 5 s idle before each
+=== b3 run 1 start=1790537976.964483820
+timing: cold=232 hot=32 threshold=150
+cseq slot=61 round=0 hits=53/64 majority=1 faults=64
+cseq slot=61 round=1 hits=62/64 majority=1 faults=64
+cseq slot=61 round=2 hits=56/64 majority=1 faults=64
+cseq slot=61 round=3 hits=57/64 majority=1 faults=64
+cseq slot=61 round=4 hits=56/64 majority=1 faults=64
+cseq slot=61 round=5 hits=55/64 majority=1 faults=64
+cseq slot=61 round=6 hits=58/64 majority=1 faults=64
+cseq slot=61 round=7 hits=59/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 1
+        12,390,846      cycles                                                                
+        14,482,688      instructions                                                          
+               525      machine_clears.memory_ordering                                        
+           138,762      l1d.replacement                                                       
+       0.003820443 seconds time elapsed
+       0.003909000 seconds user
+       0.000000000 seconds sys
+--- clock run 1 (min/max MHz over window)
+min=1515 max=7357 samples=28
+=== b3 run 2 start=1790537981.998587848
+timing: cold=318 hot=34 threshold=150
+cseq slot=61 round=0 hits=53/64 majority=1 faults=64
+cseq slot=61 round=1 hits=59/64 majority=1 faults=64
+cseq slot=61 round=2 hits=59/64 majority=1 faults=64
+cseq slot=61 round=3 hits=56/64 majority=1 faults=64
+cseq slot=61 round=4 hits=61/64 majority=1 faults=64
+cseq slot=61 round=5 hits=55/64 majority=1 faults=64
+cseq slot=61 round=6 hits=54/64 majority=1 faults=64
+cseq slot=61 round=7 hits=58/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 2
+        12,137,317      cycles                                                                
+        14,459,578      instructions                                                          
+               497      machine_clears.memory_ordering                                        
+           140,649      l1d.replacement                                                       
+       0.003768338 seconds time elapsed
+       0.003859000 seconds user
+       0.000000000 seconds sys
+--- clock run 2 (min/max MHz over window)
+min=2421 max=6933 samples=26
+=== b3 run 3 start=1790537987.030490041
+timing: cold=236 hot=32 threshold=150
+cseq slot=61 round=0 hits=55/64 majority=1 faults=64
+cseq slot=61 round=1 hits=58/64 majority=1 faults=64
+cseq slot=61 round=2 hits=63/64 majority=1 faults=64
+cseq slot=61 round=3 hits=58/64 majority=1 faults=64
+cseq slot=61 round=4 hits=61/64 majority=1 faults=64
+cseq slot=61 round=5 hits=62/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=60/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 3
+        12,144,811      cycles                                                                
+        14,449,942      instructions                                                          
+               454      machine_clears.memory_ordering                                        
+           141,541      l1d.replacement                                                       
+       0.003778592 seconds time elapsed
+       0.003869000 seconds user
+       0.000000000 seconds sys
+--- clock run 3 (min/max MHz over window)
+min=2294 max=6168 samples=33
+=== b3 run 4 start=1790537992.070516107
+timing: cold=328 hot=32 threshold=150
+cseq slot=61 round=0 hits=52/64 majority=1 faults=64
+cseq slot=61 round=1 hits=63/64 majority=1 faults=64
+cseq slot=61 round=2 hits=60/64 majority=1 faults=64
+cseq slot=61 round=3 hits=59/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=63/64 majority=1 faults=64
+cseq slot=61 round=6 hits=61/64 majority=1 faults=64
+cseq slot=61 round=7 hits=58/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 4
+        12,065,085      cycles                                                                
+        14,445,457      instructions                                                          
+               513      machine_clears.memory_ordering                                        
+           140,676      l1d.replacement                                                       
+       0.003756612 seconds time elapsed
+       0.003847000 seconds user
+       0.000000000 seconds sys
+--- clock run 4 (min/max MHz over window)
+min=2514 max=6708 samples=34
+=== b3 run 5 start=1790537997.110551680
+timing: cold=232 hot=32 threshold=150
+cseq slot=61 round=0 hits=17/64 majority=0 faults=64
+cseq slot=61 round=1 hits=17/64 majority=0 faults=64
+cseq slot=61 round=2 hits=28/64 majority=0 faults=64
+cseq slot=61 round=3 hits=18/64 majority=0 faults=64
+cseq slot=61 round=4 hits=19/64 majority=0 faults=64
+cseq slot=61 round=5 hits=23/64 majority=0 faults=64
+cseq slot=61 round=6 hits=13/64 majority=0 faults=64
+cseq slot=61 round=7 hits=21/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+--- counters run 5
+        12,143,200      cycles                                                                
+        14,436,036      instructions                                                          
+               533      machine_clears.memory_ordering                                        
+           146,283      l1d.replacement                                                       
+       0.003773252 seconds time elapsed
+       0.003864000 seconds user
+       0.000000000 seconds sys
+--- clock run 5 (min/max MHz over window)
+min=2505 max=4721 samples=30
+=== b3 run 6 start=1790538002.146591395
+timing: cold=272 hot=34 threshold=150
+cseq slot=61 round=0 hits=57/64 majority=1 faults=64
+cseq slot=61 round=1 hits=58/64 majority=1 faults=64
+cseq slot=61 round=2 hits=51/64 majority=1 faults=64
+cseq slot=61 round=3 hits=51/64 majority=1 faults=64
+cseq slot=61 round=4 hits=53/64 majority=1 faults=64
+cseq slot=61 round=5 hits=53/64 majority=1 faults=64
+cseq slot=61 round=6 hits=54/64 majority=1 faults=64
+cseq slot=61 round=7 hits=53/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 6
+        12,017,748      cycles                                                                
+        14,453,041      instructions                                                          
+               498      machine_clears.memory_ordering                                        
+           137,309      l1d.replacement                                                       
+       0.003711595 seconds time elapsed
+       0.003806000 seconds user
+       0.000000000 seconds sys
+--- clock run 6 (min/max MHz over window)
+min=2962 max=5388 samples=26
+=== b3 run 7 start=1790538007.178498643
+timing: cold=288 hot=34 threshold=150
+cseq slot=61 round=0 hits=58/64 majority=1 faults=64
+cseq slot=61 round=1 hits=59/64 majority=1 faults=64
+cseq slot=61 round=2 hits=58/64 majority=1 faults=64
+cseq slot=61 round=3 hits=60/64 majority=1 faults=64
+cseq slot=61 round=4 hits=58/64 majority=1 faults=64
+cseq slot=61 round=5 hits=58/64 majority=1 faults=64
+cseq slot=61 round=6 hits=57/64 majority=1 faults=64
+cseq slot=61 round=7 hits=59/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 7
+        12,179,917      cycles                                                                
+        14,428,593      instructions                                                          
+               574      machine_clears.memory_ordering                                        
+           135,308      l1d.replacement                                                       
+       0.003759998 seconds time elapsed
+       0.003850000 seconds user
+       0.000000000 seconds sys
+--- clock run 7 (min/max MHz over window)
+min=2285 max=5487 samples=26
+=== b3 run 8 start=1790538012.210517205
+timing: cold=290 hot=32 threshold=150
+cseq slot=61 round=0 hits=59/64 majority=1 faults=64
+cseq slot=61 round=1 hits=58/64 majority=1 faults=64
+cseq slot=61 round=2 hits=60/64 majority=1 faults=64
+cseq slot=61 round=3 hits=59/64 majority=1 faults=64
+cseq slot=61 round=4 hits=61/64 majority=1 faults=64
+cseq slot=61 round=5 hits=57/64 majority=1 faults=64
+cseq slot=61 round=6 hits=61/64 majority=1 faults=64
+cseq slot=61 round=7 hits=63/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 8
+        12,274,700      cycles                                                                
+        14,464,128      instructions                                                          
+               496      machine_clears.memory_ordering                                        
+           143,120      l1d.replacement                                                       
+       0.003793153 seconds time elapsed
+       0.003884000 seconds user
+       0.000000000 seconds sys
+--- clock run 8 (min/max MHz over window)
+min=2015 max=6748 samples=30
+=== b3 run 9 start=1790538017.246523194
+timing: cold=236 hot=32 threshold=150
+cseq slot=61 round=0 hits=47/64 majority=1 faults=64
+cseq slot=61 round=1 hits=58/64 majority=1 faults=64
+cseq slot=61 round=2 hits=61/64 majority=1 faults=64
+cseq slot=61 round=3 hits=57/64 majority=1 faults=64
+cseq slot=61 round=4 hits=58/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=63/64 majority=1 faults=64
+cseq slot=61 round=7 hits=63/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 9
+        12,284,092      cycles                                                                
+        14,448,014      instructions                                                          
+               511      machine_clears.memory_ordering                                        
+           139,952      l1d.replacement                                                       
+       0.003874932 seconds time elapsed
+       0.002722000 seconds user
+       0.001238000 seconds sys
+--- clock run 9 (min/max MHz over window)
+min=2455 max=5365 samples=26
+=== b3 run 10 start=1790538022.278950197
+timing: cold=292 hot=32 threshold=150
+cseq slot=61 round=0 hits=61/64 majority=1 faults=64
+cseq slot=61 round=1 hits=63/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+--- counters run 10
+        12,040,471      cycles                                                                
+        14,480,780      instructions                                                          
+               526      machine_clears.memory_ordering                                        
+           141,521      l1d.replacement                                                       
+       0.003761431 seconds time elapsed
+       0.003848000 seconds user
+       0.000000000 seconds sys
+--- clock run 10 (min/max MHz over window)
+min=2559 max=5008 samples=33
+== b3 done

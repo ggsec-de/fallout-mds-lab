@@ -1,0 +1,265 @@
+== pair 1 arm A (cpu0 idle) start=1790540505.785553566
+timing: cold=258 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 1 arm B (cpu0 busy) start=1790540510.790554030
+timing: cold=236 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 2 arm A (cpu0 idle) start=1790540515.796379241
+timing: cold=232 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 2 arm B (cpu0 busy) start=1790540520.801449843
+timing: cold=722 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 3 arm A (cpu0 idle) start=1790540525.807785635
+timing: cold=236 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=63/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 3 arm B (cpu0 busy) start=1790540530.818110795
+timing: cold=256 hot=32 threshold=150
+cseq slot=61 round=0 hits=57/64 majority=1 faults=64
+cseq slot=61 round=1 hits=62/64 majority=1 faults=64
+cseq slot=61 round=2 hits=62/64 majority=1 faults=64
+cseq slot=61 round=3 hits=57/64 majority=1 faults=64
+cseq slot=61 round=4 hits=51/64 majority=1 faults=64
+cseq slot=61 round=5 hits=52/64 majority=1 faults=64
+cseq slot=61 round=6 hits=57/64 majority=1 faults=64
+cseq slot=61 round=7 hits=53/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 4 arm A (cpu0 idle) start=1790540535.827927751
+timing: cold=302 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 4 arm B (cpu0 busy) start=1790540540.837343854
+timing: cold=266 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 5 arm A (cpu0 idle) start=1790540545.845895893
+timing: cold=234 hot=32 threshold=150
+cseq slot=61 round=0 hits=63/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=63/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 5 arm B (cpu0 busy) start=1790540550.855488169
+timing: cold=254 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 6 arm A (cpu0 idle) start=1790540555.865518122
+timing: cold=392 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 6 arm B (cpu0 busy) start=1790540560.875498030
+timing: cold=256 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 7 arm A (cpu0 idle) start=1790540565.884860251
+timing: cold=234 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 7 arm B (cpu0 busy) start=1790540570.894564557
+timing: cold=230 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=63/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 8 arm A (cpu0 idle) start=1790540575.904979769
+timing: cold=332 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 8 arm B (cpu0 busy) start=1790540580.914620328
+timing: cold=238 hot=32 threshold=150
+cseq slot=61 round=0 hits=63/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=63/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 9 arm A (cpu0 idle) start=1790540585.923723141
+timing: cold=270 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 9 arm B (cpu0 busy) start=1790540590.931494607
+timing: cold=258 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 10 arm A (cpu0 idle) start=1790540595.938687996
+timing: cold=242 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=63/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 10 arm B (cpu0 busy) start=1790540600.948223049
+timing: cold=244 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 11 arm A (cpu0 idle) start=1790540605.957985982
+timing: cold=234 hot=34 threshold=150
+cseq slot=61 round=0 hits=43/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=63/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 11 arm B (cpu0 busy) start=1790540610.969508292
+timing: cold=240 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=63/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 12 arm A (cpu0 idle) start=1790540615.979344145
+timing: cold=238 hot=32 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== pair 12 arm B (cpu0 busy) start=1790540620.989231996
+timing: cold=254 hot=32 threshold=150
+cseq slot=61 round=0 hits=61/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=63/64 majority=1 faults=64
+cseq slot=61 round=3 hits=63/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=63/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== sibling2 done

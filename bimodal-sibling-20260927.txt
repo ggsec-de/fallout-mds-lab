@@ -1,0 +1,203 @@
+== A: cpu0 idle (10 runs, 5 s gaps)
+timing: cold=296 hot=34 threshold=150
+cseq slot=61 round=0 hits=61/64 majority=1 faults=64
+cseq slot=61 round=1 hits=63/64 majority=1 faults=64
+cseq slot=61 round=2 hits=62/64 majority=1 faults=64
+cseq slot=61 round=3 hits=61/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=60/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=232 hot=32 threshold=150
+cseq slot=61 round=0 hits=60/64 majority=1 faults=64
+cseq slot=61 round=1 hits=63/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=63/64 majority=1 faults=64
+cseq slot=61 round=4 hits=63/64 majority=1 faults=64
+cseq slot=61 round=5 hits=63/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=228 hot=32 threshold=150
+cseq slot=61 round=0 hits=51/64 majority=1 faults=64
+cseq slot=61 round=1 hits=61/64 majority=1 faults=64
+cseq slot=61 round=2 hits=63/64 majority=1 faults=64
+cseq slot=61 round=3 hits=58/64 majority=1 faults=64
+cseq slot=61 round=4 hits=60/64 majority=1 faults=64
+cseq slot=61 round=5 hits=62/64 majority=1 faults=64
+cseq slot=61 round=6 hits=61/64 majority=1 faults=64
+cseq slot=61 round=7 hits=62/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=232 hot=32 threshold=150
+cseq slot=61 round=0 hits=60/64 majority=1 faults=64
+cseq slot=61 round=1 hits=60/64 majority=1 faults=64
+cseq slot=61 round=2 hits=61/64 majority=1 faults=64
+cseq slot=61 round=3 hits=58/64 majority=1 faults=64
+cseq slot=61 round=4 hits=61/64 majority=1 faults=64
+cseq slot=61 round=5 hits=63/64 majority=1 faults=64
+cseq slot=61 round=6 hits=61/64 majority=1 faults=64
+cseq slot=61 round=7 hits=62/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=234 hot=34 threshold=150
+cseq slot=61 round=0 hits=61/64 majority=1 faults=64
+cseq slot=61 round=1 hits=62/64 majority=1 faults=64
+cseq slot=61 round=2 hits=62/64 majority=1 faults=64
+cseq slot=61 round=3 hits=62/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=254 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=64/64 majority=1 faults=64
+cseq slot=61 round=6 hits=63/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=240 hot=34 threshold=150
+cseq slot=61 round=0 hits=59/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=62/64 majority=1 faults=64
+cseq slot=61 round=3 hits=62/64 majority=1 faults=64
+cseq slot=61 round=4 hits=63/64 majority=1 faults=64
+cseq slot=61 round=5 hits=63/64 majority=1 faults=64
+cseq slot=61 round=6 hits=63/64 majority=1 faults=64
+cseq slot=61 round=7 hits=64/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=230 hot=34 threshold=150
+cseq slot=61 round=0 hits=59/64 majority=1 faults=64
+cseq slot=61 round=1 hits=58/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=62/64 majority=1 faults=64
+cseq slot=61 round=6 hits=63/64 majority=1 faults=64
+cseq slot=61 round=7 hits=62/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=232 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=62/64 majority=1 faults=64
+cseq slot=61 round=2 hits=62/64 majority=1 faults=64
+cseq slot=61 round=3 hits=62/64 majority=1 faults=64
+cseq slot=61 round=4 hits=59/64 majority=1 faults=64
+cseq slot=61 round=5 hits=63/64 majority=1 faults=64
+cseq slot=61 round=6 hits=63/64 majority=1 faults=64
+cseq slot=61 round=7 hits=63/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=734 hot=32 threshold=150
+cseq slot=61 round=0 hits=57/64 majority=1 faults=64
+cseq slot=61 round=1 hits=56/64 majority=1 faults=64
+cseq slot=61 round=2 hits=60/64 majority=1 faults=64
+cseq slot=61 round=3 hits=61/64 majority=1 faults=64
+cseq slot=61 round=4 hits=61/64 majority=1 faults=64
+cseq slot=61 round=5 hits=60/64 majority=1 faults=64
+cseq slot=61 round=6 hits=58/64 majority=1 faults=64
+cseq slot=61 round=7 hits=59/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== B: cpu0 busy spinner (10 runs, 5 s gaps)
+timing: cold=228 hot=34 threshold=150
+cseq slot=61 round=0 hits=61/64 majority=1 faults=64
+cseq slot=61 round=1 hits=62/64 majority=1 faults=64
+cseq slot=61 round=2 hits=62/64 majority=1 faults=64
+cseq slot=61 round=3 hits=63/64 majority=1 faults=64
+cseq slot=61 round=4 hits=59/64 majority=1 faults=64
+cseq slot=61 round=5 hits=58/64 majority=1 faults=64
+cseq slot=61 round=6 hits=61/64 majority=1 faults=64
+cseq slot=61 round=7 hits=63/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=256 hot=32 threshold=150
+cseq slot=61 round=0 hits=38/64 majority=1 faults=64
+cseq slot=61 round=1 hits=47/64 majority=1 faults=64
+cseq slot=61 round=2 hits=40/64 majority=1 faults=64
+cseq slot=61 round=3 hits=45/64 majority=1 faults=64
+cseq slot=61 round=4 hits=23/64 majority=0 faults=64
+cseq slot=61 round=5 hits=46/64 majority=1 faults=64
+cseq slot=61 round=6 hits=36/64 majority=1 faults=64
+cseq slot=61 round=7 hits=40/64 majority=1 faults=64
+cseq slot=61 majority_rounds=7/8 repeatable=1
+timing: cold=230 hot=34 threshold=150
+cseq slot=61 round=0 hits=59/64 majority=1 faults=64
+cseq slot=61 round=1 hits=61/64 majority=1 faults=64
+cseq slot=61 round=2 hits=62/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=62/64 majority=1 faults=64
+cseq slot=61 round=5 hits=62/64 majority=1 faults=64
+cseq slot=61 round=6 hits=63/64 majority=1 faults=64
+cseq slot=61 round=7 hits=63/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=230 hot=32 threshold=150
+cseq slot=61 round=0 hits=61/64 majority=1 faults=64
+cseq slot=61 round=1 hits=63/64 majority=1 faults=64
+cseq slot=61 round=2 hits=60/64 majority=1 faults=64
+cseq slot=61 round=3 hits=63/64 majority=1 faults=64
+cseq slot=61 round=4 hits=64/64 majority=1 faults=64
+cseq slot=61 round=5 hits=62/64 majority=1 faults=64
+cseq slot=61 round=6 hits=61/64 majority=1 faults=64
+cseq slot=61 round=7 hits=61/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=232 hot=32 threshold=150
+cseq slot=61 round=0 hits=52/64 majority=1 faults=64
+cseq slot=61 round=1 hits=62/64 majority=1 faults=64
+cseq slot=61 round=2 hits=54/64 majority=1 faults=64
+cseq slot=61 round=3 hits=62/64 majority=1 faults=64
+cseq slot=61 round=4 hits=63/64 majority=1 faults=64
+cseq slot=61 round=5 hits=57/64 majority=1 faults=64
+cseq slot=61 round=6 hits=60/64 majority=1 faults=64
+cseq slot=61 round=7 hits=54/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=764 hot=32 threshold=150
+cseq slot=61 round=0 hits=58/64 majority=1 faults=64
+cseq slot=61 round=1 hits=62/64 majority=1 faults=64
+cseq slot=61 round=2 hits=58/64 majority=1 faults=64
+cseq slot=61 round=3 hits=64/64 majority=1 faults=64
+cseq slot=61 round=4 hits=60/64 majority=1 faults=64
+cseq slot=61 round=5 hits=62/64 majority=1 faults=64
+cseq slot=61 round=6 hits=60/64 majority=1 faults=64
+cseq slot=61 round=7 hits=60/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=300 hot=32 threshold=150
+cseq slot=61 round=0 hits=57/64 majority=1 faults=64
+cseq slot=61 round=1 hits=59/64 majority=1 faults=64
+cseq slot=61 round=2 hits=57/64 majority=1 faults=64
+cseq slot=61 round=3 hits=55/64 majority=1 faults=64
+cseq slot=61 round=4 hits=56/64 majority=1 faults=64
+cseq slot=61 round=5 hits=61/64 majority=1 faults=64
+cseq slot=61 round=6 hits=57/64 majority=1 faults=64
+cseq slot=61 round=7 hits=54/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=228 hot=34 threshold=150
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=63/64 majority=1 faults=64
+cseq slot=61 round=2 hits=61/64 majority=1 faults=64
+cseq slot=61 round=3 hits=61/64 majority=1 faults=64
+cseq slot=61 round=4 hits=62/64 majority=1 faults=64
+cseq slot=61 round=5 hits=62/64 majority=1 faults=64
+cseq slot=61 round=6 hits=59/64 majority=1 faults=64
+cseq slot=61 round=7 hits=63/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=228 hot=32 threshold=150
+cseq slot=61 round=0 hits=59/64 majority=1 faults=64
+cseq slot=61 round=1 hits=64/64 majority=1 faults=64
+cseq slot=61 round=2 hits=60/64 majority=1 faults=64
+cseq slot=61 round=3 hits=63/64 majority=1 faults=64
+cseq slot=61 round=4 hits=63/64 majority=1 faults=64
+cseq slot=61 round=5 hits=62/64 majority=1 faults=64
+cseq slot=61 round=6 hits=64/64 majority=1 faults=64
+cseq slot=61 round=7 hits=62/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+timing: cold=264 hot=32 threshold=150
+cseq slot=61 round=0 hits=56/64 majority=1 faults=64
+cseq slot=61 round=1 hits=62/64 majority=1 faults=64
+cseq slot=61 round=2 hits=64/64 majority=1 faults=64
+cseq slot=61 round=3 hits=62/64 majority=1 faults=64
+cseq slot=61 round=4 hits=60/64 majority=1 faults=64
+cseq slot=61 round=5 hits=59/64 majority=1 faults=64
+cseq slot=61 round=6 hits=56/64 majority=1 faults=64
+cseq slot=61 round=7 hits=62/64 majority=1 faults=64
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== sibling done

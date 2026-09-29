@@ -1,0 +1,158 @@
+== floor: attacker alone on cpu1
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== D3a: victim store+yield on cpu1 (background), attacker cpu1 x6
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=1/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=1/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== D3b: victim store only (no yield) on cpu1, attacker cpu1 x4
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=1/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== D3c: victim store+yield on cpu2 (other core), attacker cpu1 x3
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== floor end: attacker alone on cpu1
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=0/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 round=0 hits=0/64 majority=0 faults=64
+cseq slot=61 round=1 hits=0/64 majority=0 faults=64
+cseq slot=61 round=2 hits=0/64 majority=0 faults=64
+cseq slot=61 round=3 hits=0/64 majority=0 faults=64
+cseq slot=61 round=4 hits=1/64 majority=0 faults=64
+cseq slot=61 round=5 hits=0/64 majority=0 faults=64
+cseq slot=61 round=6 hits=0/64 majority=0 faults=64
+cseq slot=61 round=7 hits=0/64 majority=0 faults=64
+cseq slot=61 majority_rounds=0/8 repeatable=0

@@ -1,0 +1,26 @@
+== floor: attacker alone
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== D4: victim store+yield on cpu1, frozen during each attacker run
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== D4 sanity: attacker WITH store under the same alternation
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq slot=61 majority_rounds=8/8 repeatable=1
+== floor end: attacker alone
+cseq slot=61 majority_rounds=0/8 repeatable=0
+cseq slot=61 majority_rounds=0/8 repeatable=0
+== d4 done

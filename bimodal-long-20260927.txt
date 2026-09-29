@@ -1,0 +1,205 @@
+=== long-run 1 start=1790535125.602953516
+fallout-oneshot: cpu=1 canary=0x42 class=0x02 offset=0x40(set 1) block=0xc0(set 3) rounds=32 slot=0x1040 hot<150 fault=nc-gp gadget=value vflush=0 fresh=1 setjmp=0
+timing: cold=256 hot=32 threshold=150
+probe: flush+reload=252 +load(same set)=34 +load(other set)=252
+selftest: arch touched=0x42 best=2 best_t=34 hot=1 -> OK
+cseq slot=61 trials=64 rounds=32 store=1 fresh=1 block=0 asmstore=0 rip=0 sjfirst=0 fence=0 lfence=0 loadal=0 asmchain=0
+cseq slot=61 round=0 hits=59/64 majority=1 faults=64
+cseq slot=61 round=1 hits=62/64 majority=1 faults=64
+cseq slot=61 round=2 hits=63/64 majority=1 faults=64
+cseq slot=61 round=3 hits=59/64 majority=1 faults=64
+cseq slot=61 round=4 hits=61/64 majority=1 faults=64
+cseq slot=61 round=5 hits=62/64 majority=1 faults=64
+cseq slot=61 round=6 hits=61/64 majority=1 faults=64
+cseq slot=61 round=7 hits=63/64 majority=1 faults=64
+cseq slot=61 round=8 hits=61/64 majority=1 faults=64
+cseq slot=61 round=9 hits=61/64 majority=1 faults=64
+cseq slot=61 round=10 hits=59/64 majority=1 faults=64
+cseq slot=61 round=11 hits=59/64 majority=1 faults=64
+cseq slot=61 round=12 hits=63/64 majority=1 faults=64
+cseq slot=61 round=13 hits=59/64 majority=1 faults=64
+cseq slot=61 round=14 hits=64/64 majority=1 faults=64
+cseq slot=61 round=15 hits=63/64 majority=1 faults=64
+cseq slot=61 round=16 hits=61/64 majority=1 faults=64
+cseq slot=61 round=17 hits=60/64 majority=1 faults=64
+cseq slot=61 round=18 hits=62/64 majority=1 faults=64
+cseq slot=61 round=19 hits=60/64 majority=1 faults=64
+cseq slot=61 round=20 hits=62/64 majority=1 faults=64
+cseq slot=61 round=21 hits=63/64 majority=1 faults=64
+cseq slot=61 round=22 hits=61/64 majority=1 faults=64
+cseq slot=61 round=23 hits=58/64 majority=1 faults=64
+cseq slot=61 round=24 hits=61/64 majority=1 faults=64
+cseq slot=61 round=25 hits=60/64 majority=1 faults=64
+cseq slot=61 round=26 hits=61/64 majority=1 faults=64
+cseq slot=61 round=27 hits=59/64 majority=1 faults=64
+cseq slot=61 round=28 hits=62/64 majority=1 faults=64
+cseq slot=61 round=29 hits=61/64 majority=1 faults=64
+cseq slot=61 round=30 hits=61/64 majority=1 faults=64
+cseq slot=61 round=31 hits=62/64 majority=1 faults=64
+cseq slot=61 majority_rounds=32/32 repeatable=1
+cseq_result: rates only, two-run rule is outside this process
+=== long-run 1 end=1790535125.613195857
+=== long-run 2 start=1790535130.614195468
+fallout-oneshot: cpu=1 canary=0x42 class=0x02 offset=0x40(set 1) block=0xc0(set 3) rounds=32 slot=0x1040 hot<150 fault=nc-gp gadget=value vflush=0 fresh=1 setjmp=0
+timing: cold=772 hot=34 threshold=150
+probe: flush+reload=252 +load(same set)=34 +load(other set)=254
+selftest: arch touched=0x42 best=2 best_t=34 hot=1 -> OK
+cseq slot=61 trials=64 rounds=32 store=1 fresh=1 block=0 asmstore=0 rip=0 sjfirst=0 fence=0 lfence=0 loadal=0 asmchain=0
+cseq slot=61 round=0 hits=59/64 majority=1 faults=64
+cseq slot=61 round=1 hits=57/64 majority=1 faults=64
+cseq slot=61 round=2 hits=61/64 majority=1 faults=64
+cseq slot=61 round=3 hits=61/64 majority=1 faults=64
+cseq slot=61 round=4 hits=53/64 majority=1 faults=64
+cseq slot=61 round=5 hits=60/64 majority=1 faults=64
+cseq slot=61 round=6 hits=57/64 majority=1 faults=64
+cseq slot=61 round=7 hits=56/64 majority=1 faults=64
+cseq slot=61 round=8 hits=59/64 majority=1 faults=64
+cseq slot=61 round=9 hits=59/64 majority=1 faults=64
+cseq slot=61 round=10 hits=58/64 majority=1 faults=64
+cseq slot=61 round=11 hits=57/64 majority=1 faults=64
+cseq slot=61 round=12 hits=58/64 majority=1 faults=64
+cseq slot=61 round=13 hits=60/64 majority=1 faults=64
+cseq slot=61 round=14 hits=55/64 majority=1 faults=64
+cseq slot=61 round=15 hits=60/64 majority=1 faults=64
+cseq slot=61 round=16 hits=59/64 majority=1 faults=64
+cseq slot=61 round=17 hits=61/64 majority=1 faults=64
+cseq slot=61 round=18 hits=57/64 majority=1 faults=64
+cseq slot=61 round=19 hits=59/64 majority=1 faults=64
+cseq slot=61 round=20 hits=61/64 majority=1 faults=64
+cseq slot=61 round=21 hits=56/64 majority=1 faults=64
+cseq slot=61 round=22 hits=60/64 majority=1 faults=64
+cseq slot=61 round=23 hits=59/64 majority=1 faults=64
+cseq slot=61 round=24 hits=61/64 majority=1 faults=64
+cseq slot=61 round=25 hits=61/64 majority=1 faults=64
+cseq slot=61 round=26 hits=61/64 majority=1 faults=64
+cseq slot=61 round=27 hits=60/64 majority=1 faults=64
+cseq slot=61 round=28 hits=60/64 majority=1 faults=64
+cseq slot=61 round=29 hits=60/64 majority=1 faults=64
+cseq slot=61 round=30 hits=61/64 majority=1 faults=64
+cseq slot=61 round=31 hits=61/64 majority=1 faults=64
+cseq slot=61 majority_rounds=32/32 repeatable=1
+cseq_result: rates only, two-run rule is outside this process
+=== long-run 2 end=1790535130.623941232
+=== long-run 3 start=1790535135.624931141
+fallout-oneshot: cpu=1 canary=0x42 class=0x02 offset=0x40(set 1) block=0xc0(set 3) rounds=32 slot=0x1040 hot<150 fault=nc-gp gadget=value vflush=0 fresh=1 setjmp=0
+timing: cold=256 hot=34 threshold=150
+probe: flush+reload=250 +load(same set)=34 +load(other set)=248
+selftest: arch touched=0x42 best=2 best_t=34 hot=1 -> OK
+cseq slot=61 trials=64 rounds=32 store=1 fresh=1 block=0 asmstore=0 rip=0 sjfirst=0 fence=0 lfence=0 loadal=0 asmchain=0
+cseq slot=61 round=0 hits=58/64 majority=1 faults=64
+cseq slot=61 round=1 hits=61/64 majority=1 faults=64
+cseq slot=61 round=2 hits=59/64 majority=1 faults=64
+cseq slot=61 round=3 hits=63/64 majority=1 faults=64
+cseq slot=61 round=4 hits=62/64 majority=1 faults=64
+cseq slot=61 round=5 hits=62/64 majority=1 faults=64
+cseq slot=61 round=6 hits=61/64 majority=1 faults=64
+cseq slot=61 round=7 hits=63/64 majority=1 faults=64
+cseq slot=61 round=8 hits=62/64 majority=1 faults=64
+cseq slot=61 round=9 hits=62/64 majority=1 faults=64
+cseq slot=61 round=10 hits=63/64 majority=1 faults=64
+cseq slot=61 round=11 hits=63/64 majority=1 faults=64
+cseq slot=61 round=12 hits=59/64 majority=1 faults=64
+cseq slot=61 round=13 hits=62/64 majority=1 faults=64
+cseq slot=61 round=14 hits=61/64 majority=1 faults=64
+cseq slot=61 round=15 hits=62/64 majority=1 faults=64
+cseq slot=61 round=16 hits=61/64 majority=1 faults=64
+cseq slot=61 round=17 hits=63/64 majority=1 faults=64
+cseq slot=61 round=18 hits=63/64 majority=1 faults=64
+cseq slot=61 round=19 hits=58/64 majority=1 faults=64
+cseq slot=61 round=20 hits=61/64 majority=1 faults=64
+cseq slot=61 round=21 hits=62/64 majority=1 faults=64
+cseq slot=61 round=22 hits=61/64 majority=1 faults=64
+cseq slot=61 round=23 hits=64/64 majority=1 faults=64
+cseq slot=61 round=24 hits=62/64 majority=1 faults=64
+cseq slot=61 round=25 hits=64/64 majority=1 faults=64
+cseq slot=61 round=26 hits=62/64 majority=1 faults=64
+cseq slot=61 round=27 hits=63/64 majority=1 faults=64
+cseq slot=61 round=28 hits=61/64 majority=1 faults=64
+cseq slot=61 round=29 hits=62/64 majority=1 faults=64
+cseq slot=61 round=30 hits=64/64 majority=1 faults=64
+cseq slot=61 round=31 hits=63/64 majority=1 faults=64
+cseq slot=61 majority_rounds=32/32 repeatable=1
+cseq_result: rates only, two-run rule is outside this process
+=== long-run 3 end=1790535135.634585927
+=== long-run 4 start=1790535140.635589675
+fallout-oneshot: cpu=1 canary=0x42 class=0x02 offset=0x40(set 1) block=0xc0(set 3) rounds=32 slot=0x1040 hot<150 fault=nc-gp gadget=value vflush=0 fresh=1 setjmp=0
+timing: cold=258 hot=32 threshold=150
+probe: flush+reload=264 +load(same set)=32 +load(other set)=256
+selftest: arch touched=0x42 best=2 best_t=34 hot=1 -> OK
+cseq slot=61 trials=64 rounds=32 store=1 fresh=1 block=0 asmstore=0 rip=0 sjfirst=0 fence=0 lfence=0 loadal=0 asmchain=0
+cseq slot=61 round=0 hits=62/64 majority=1 faults=64
+cseq slot=61 round=1 hits=61/64 majority=1 faults=64
+cseq slot=61 round=2 hits=57/64 majority=1 faults=64
+cseq slot=61 round=3 hits=59/64 majority=1 faults=64
+cseq slot=61 round=4 hits=58/64 majority=1 faults=64
+cseq slot=61 round=5 hits=62/64 majority=1 faults=64
+cseq slot=61 round=6 hits=57/64 majority=1 faults=64
+cseq slot=61 round=7 hits=60/64 majority=1 faults=64
+cseq slot=61 round=8 hits=64/64 majority=1 faults=64
+cseq slot=61 round=9 hits=62/64 majority=1 faults=64
+cseq slot=61 round=10 hits=62/64 majority=1 faults=64
+cseq slot=61 round=11 hits=63/64 majority=1 faults=64
+cseq slot=61 round=12 hits=63/64 majority=1 faults=64
+cseq slot=61 round=13 hits=56/64 majority=1 faults=64
+cseq slot=61 round=14 hits=62/64 majority=1 faults=64
+cseq slot=61 round=15 hits=60/64 majority=1 faults=64
+cseq slot=61 round=16 hits=62/64 majority=1 faults=64
+cseq slot=61 round=17 hits=63/64 majority=1 faults=64
+cseq slot=61 round=18 hits=62/64 majority=1 faults=64
+cseq slot=61 round=19 hits=63/64 majority=1 faults=64
+cseq slot=61 round=20 hits=64/64 majority=1 faults=64
+cseq slot=61 round=21 hits=64/64 majority=1 faults=64
+cseq slot=61 round=22 hits=62/64 majority=1 faults=64
+cseq slot=61 round=23 hits=63/64 majority=1 faults=64
+cseq slot=61 round=24 hits=64/64 majority=1 faults=64
+cseq slot=61 round=25 hits=63/64 majority=1 faults=64
+cseq slot=61 round=26 hits=64/64 majority=1 faults=64
+cseq slot=61 round=27 hits=62/64 majority=1 faults=64
+cseq slot=61 round=28 hits=64/64 majority=1 faults=64
+cseq slot=61 round=29 hits=63/64 majority=1 faults=64
+cseq slot=61 round=30 hits=62/64 majority=1 faults=64
+cseq slot=61 round=31 hits=63/64 majority=1 faults=64
+cseq slot=61 majority_rounds=32/32 repeatable=1
+cseq_result: rates only, two-run rule is outside this process
+=== long-run 4 end=1790535140.645279450
+=== long-run 5 start=1790535145.646257759
+fallout-oneshot: cpu=1 canary=0x42 class=0x02 offset=0x40(set 1) block=0xc0(set 3) rounds=32 slot=0x1040 hot<150 fault=nc-gp gadget=value vflush=0 fresh=1 setjmp=0
+timing: cold=258 hot=32 threshold=150
+probe: flush+reload=1144 +load(same set)=32 +load(other set)=254
+selftest: arch touched=0x42 best=2 best_t=34 hot=1 -> OK
+cseq slot=61 trials=64 rounds=32 store=1 fresh=1 block=0 asmstore=0 rip=0 sjfirst=0 fence=0 lfence=0 loadal=0 asmchain=0
+cseq slot=61 round=0 hits=57/64 majority=1 faults=64
+cseq slot=61 round=1 hits=59/64 majority=1 faults=64
+cseq slot=61 round=2 hits=60/64 majority=1 faults=64
+cseq slot=61 round=3 hits=59/64 majority=1 faults=64
+cseq slot=61 round=4 hits=58/64 majority=1 faults=64
+cseq slot=61 round=5 hits=56/64 majority=1 faults=64
+cseq slot=61 round=6 hits=58/64 majority=1 faults=64
+cseq slot=61 round=7 hits=58/64 majority=1 faults=64
+cseq slot=61 round=8 hits=62/64 majority=1 faults=64
+cseq slot=61 round=9 hits=60/64 majority=1 faults=64
+cseq slot=61 round=10 hits=61/64 majority=1 faults=64
+cseq slot=61 round=11 hits=61/64 majority=1 faults=64
+cseq slot=61 round=12 hits=61/64 majority=1 faults=64
+cseq slot=61 round=13 hits=60/64 majority=1 faults=64
+cseq slot=61 round=14 hits=60/64 majority=1 faults=64
+cseq slot=61 round=15 hits=57/64 majority=1 faults=64
+cseq slot=61 round=16 hits=54/64 majority=1 faults=64
+cseq slot=61 round=17 hits=58/64 majority=1 faults=64
+cseq slot=61 round=18 hits=59/64 majority=1 faults=64
+cseq slot=61 round=19 hits=59/64 majority=1 faults=64
+cseq slot=61 round=20 hits=61/64 majority=1 faults=64
+cseq slot=61 round=21 hits=57/64 majority=1 faults=64
+cseq slot=61 round=22 hits=59/64 majority=1 faults=64
+cseq slot=61 round=23 hits=58/64 majority=1 faults=64
+cseq slot=61 round=24 hits=61/64 majority=1 faults=64
+cseq slot=61 round=25 hits=63/64 majority=1 faults=64
+cseq slot=61 round=26 hits=62/64 majority=1 faults=64
+cseq slot=61 round=27 hits=63/64 majority=1 faults=64
+cseq slot=61 round=28 hits=61/64 majority=1 faults=64
+cseq slot=61 round=29 hits=61/64 majority=1 faults=64
+cseq slot=61 round=30 hits=58/64 majority=1 faults=64
+cseq slot=61 round=31 hits=59/64 majority=1 faults=64
+cseq slot=61 majority_rounds=32/32 repeatable=1
+cseq_result: rates only, two-run rule is outside this process
+=== long-run 5 end=1790535145.655848142

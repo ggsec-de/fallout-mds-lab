@@ -1,0 +1,44 @@
+build md5: 41bfb756804cf1f5bbe6a08af6d10018
+date: 2026-09-28T18:11:28Z
+########## TRIGGER=assist ##########
+== assist slot=61 store   (signal) x2
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+== assist slot=61 nostore (floor) x2
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+== assist slot=63 store   (liveness) x2
+   trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+   trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+== assist slot=63 nostore (liveness) x2
+   trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+   trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+== assist slot=61 fence x2
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+== assist slot=61 lfence x2
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+########## TRIGGER=demand ##########
+== demand slot=61 store   (signal) x2
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+== demand slot=61 nostore (floor) x2
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+== demand slot=63 store   (liveness) x2
+   trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+   trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+== demand slot=63 nostore (liveness) x2
+   trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+   trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+== demand slot=61 fence x2
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+== demand slot=61 lfence x2
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+   trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+== stock hot base, same build, sanity x2
+   cseq slot=61 majority_rounds=8/8 repeatable=1
+   cseq slot=61 majority_rounds=8/8 repeatable=1
+== assist-run done

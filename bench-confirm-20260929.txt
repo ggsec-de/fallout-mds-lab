@@ -1,0 +1,61 @@
+build md5: 41bfb756804cf1f5bbe6a08af6d10018
+date: 2026-09-29T14:40:46Z
+governor: performance
+online: 0-2
+cpu1 thread siblings: 1
+
+########## stock hot base, sanity ##########
+cseq base                              timing: cold=256 hot=34 threshold=150 cseq slot=61 majority_rounds=8/8 repeatable=1 
+cseq base                              timing: cold=290 hot=36 threshold=150 cseq slot=61 majority_rounds=8/8 repeatable=1 
+
+########## SPEC + noncanon: the positive, 10-process burst ##########
+spec noncanon s61 store (1/10)         timing: cold=242 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+spec noncanon s61 store (2/10)         timing: cold=250 hot=36 threshold=150 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+spec noncanon s61 store (3/10)         timing: cold=252 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+spec noncanon s61 store (4/10)         timing: cold=234 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+spec noncanon s61 store (5/10)         timing: cold=242 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+spec noncanon s61 store (6/10)         timing: cold=232 hot=36 threshold=150 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+spec noncanon s61 store (7/10)         timing: cold=242 hot=32 threshold=150 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+spec noncanon s61 store (8/10)         timing: cold=236 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+spec noncanon s61 store (9/10)         timing: cold=232 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+spec noncanon s61 store (10/10)        timing: cold=428 hot=36 threshold=150 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+
+########## SPEC + noncanon: floors and the timing control ##########
+spec noncanon s61 store=none           timing: cold=258 hot=36 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+spec noncanon s61 store=none           timing: cold=290 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+spec noncanon s61 store=none           timing: cold=688 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+spec noncanon s61 store=early          timing: cold=370 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+spec noncanon s61 store=early          timing: cold=284 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+
+########## SPEC: the other two targets ##########
+spec present s61 store                 timing: cold=234 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+spec present s61 store                 timing: cold=304 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+spec present s63 liveness              timing: cold=292 hot=34 threshold=150 spec gate: PASS spec slot=63 majority_rounds=8/8 repeatable=1 
+spec present s63 liveness              timing: cold=408 hot=34 threshold=150 spec gate: PASS spec slot=63 majority_rounds=8/8 repeatable=1 
+spec protnone s61 store                timing: cold=408 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+spec protnone s61 store                timing: cold=246 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+
+########## value swap, 2x2 ##########
+swap canary=0x42 slot=61 store         timing: cold=316 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=8/8 repeatable=1 
+swap canary=0x42 slot=27 store         timing: cold=240 hot=34 threshold=150 spec gate: PASS spec slot=27 majority_rounds=0/8 repeatable=0 
+swap canary=0x24 slot=61 store         timing: cold=258 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+swap canary=0x24 slot=27 store         timing: cold=400 hot=34 threshold=150 spec gate: PASS spec slot=27 majority_rounds=8/8 repeatable=1 
+swap canary=0x42 slot=61 none          timing: cold=342 hot=36 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+swap canary=0x42 slot=27 none          timing: cold=1252 hot=34 threshold=150 spec gate: PASS spec slot=27 majority_rounds=0/8 repeatable=0 
+swap canary=0x24 slot=61 none          timing: cold=262 hot=34 threshold=150 spec gate: PASS spec slot=61 majority_rounds=0/8 repeatable=0 
+swap canary=0x24 slot=27 none          timing: cold=338 hot=34 threshold=150 spec gate: PASS spec slot=27 majority_rounds=0/8 repeatable=0 
+
+########## Arm A spot check ##########
+assist s61 store                       timing: cold=238 hot=34 threshold=150 trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+assist s61 store                       timing: cold=244 hot=36 threshold=150 trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+assist s63 liveness                    timing: cold=234 hot=34 threshold=150 trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+assist s63 liveness                    timing: cold=276 hot=34 threshold=150 trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+demand s61 store                       timing: cold=234 hot=34 threshold=150 trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+demand s61 store                       timing: cold=294 hot=34 threshold=150 trig gate: PASS cseq slot=61 majority_rounds=0/8 repeatable=0 
+demand s63 liveness                    timing: cold=380 hot=34 threshold=150 trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+demand s63 liveness                    timing: cold=362 hot=34 threshold=150 trig gate: PASS cseq slot=63 majority_rounds=8/8 repeatable=1 
+
+########## stock hot base, sanity again ##########
+cseq base                              timing: cold=1216 hot=36 threshold=150 cseq slot=61 majority_rounds=8/8 repeatable=1 
+cseq base                              timing: cold=290 hot=34 threshold=150 cseq slot=61 majority_rounds=8/8 repeatable=1 
+== bench-confirm done

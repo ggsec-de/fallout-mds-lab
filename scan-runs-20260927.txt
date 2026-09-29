@@ -1,0 +1,61 @@
+=== scan-run 1 start=1790541229.100761109
+timing: cold=258 hot=34 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=63 best_t=32 second_t=34 true_t=34 hot=2
+=== scan-run 2 start=1790541234.105708984
+timing: cold=272 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=63 best_t=32 second_t=34 true_t=34 hot=3
+=== scan-run 3 start=1790541239.110612795
+timing: cold=254 hot=36 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=61 best_t=34 second_t=184 true_t=34 hot=1
+=== scan-run 4 start=1790541244.115541737
+timing: cold=258 hot=34 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=0 best_t=34 second_t=34 true_t=34 hot=2
+=== scan-run 5 start=1790541249.120443770
+timing: cold=256 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=61 best_t=34 second_t=170 true_t=34 hot=1
+=== scan-run 6 start=1790541254.125362876
+timing: cold=230 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=61 best_t=32 second_t=32 true_t=32 hot=2
+=== scan-run 7 start=1790541259.130289584
+timing: cold=240 hot=36 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=61 best_t=32 second_t=176 true_t=32 hot=1
+=== scan-run 8 start=1790541264.135275911
+timing: cold=230 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=61 best_t=34 second_t=242 true_t=34 hot=1
+=== scan-run 9 start=1790541269.140208067
+timing: cold=258 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=61 best_t=34 second_t=158 true_t=34 hot=1
+=== scan-run 10 start=1790541274.145149232
+timing: cold=256 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=0 best_t=34 second_t=34 true_t=34 hot=2
+=== scan-run 11 start=1790541279.150093099
+timing: cold=266 hot=34 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=61 best_t=34 second_t=34 true_t=34 hot=2
+=== scan-run 12 start=1790541284.155032767
+timing: cold=236 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=61 best_t=34 second_t=34 true_t=34 hot=2
+=== scan-run 13 start=1790541289.159945376
+timing: cold=256 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=61 best_t=32 second_t=34 true_t=32 hot=2
+=== scan-run 14 start=1790541294.164872802
+timing: cold=232 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=61 best_t=34 second_t=164 true_t=34 hot=1
+=== scan-run 15 start=1790541299.169797207
+timing: cold=250 hot=32 threshold=150
+cseq slot=61 majority_rounds=8/8 repeatable=1
+cseq scan best=63 best_t=32 second_t=34 true_t=34 hot=3
+== scan done
